@@ -8,7 +8,6 @@ use App\Models\Produk as ProdukBarang;
 
 class Produk extends Component
 {
-	use WithPagination;
 	
 	public $nama_produk, $harga, $jumlah, $keterangan, $selectedId, $search;
 	public $edit_nama_produk, $edit_harga, $edit_jumlah, $edit_keterangan;
@@ -31,6 +30,8 @@ class Produk extends Component
 	protected $listeners = [
 		'render', 'destroy'
 	];
+	
+	use WithPagination;
 	
 	/**
      *

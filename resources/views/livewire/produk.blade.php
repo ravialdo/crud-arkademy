@@ -171,7 +171,7 @@
 								</tbody>
 							</table>
 							<div class="mt-1 py-3 table-responsive">
-								{{ $produk->links('vendor.pagination.bootstrap-4') }}
+								{{ $produk->links() }}
 							</div>
 						</div>
 
